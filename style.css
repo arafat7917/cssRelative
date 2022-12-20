@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top{
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(43, 119, 255, .5);
+  position: fixed;
+  z-index: 2;
+}
+.top .head_sec img{
+  margin-left: 10px;
+  top: 5px;
+  width: 80px;
+  position: absolute;
+}
+.top .head_sec h1{
+  font-family: cursive;
+  margin-left: 100px;
+  color: white;
+  top: 15px;
+  position: relative;
+}
+.top .head_sec .nav{
+  float: right;
+  
+}
+.top .head_sec .nav ul{
+  list-style: none;
+ display: flex;
+ margin: 0px 10px;
+cursor: pointer;
+}
+.top .head_sec .nav ul li{
+  padding: 0px 10px ;
+   margin-top: -10px;
+   position: relative;
+}
+.top .head_sec .nav ul li::after {
+  content: '';
+  cursor: pointer;
+  width: 0%;
+  height: 1px;
+  background-color: aqua;
+  position: absolute;
+  bottom: -5px;
+  left: 10px;
+  transition: .4s all ease-in-out;
+}
+.top .head_sec .nav ul li:hover::after{
+  width: 70%;
+  
+}
+.top .head_sec .nav ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  
+}
+
+
+.btx{
+  position: absolute;
+  z-index: 1;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 200px;
+  margin-left: 350px;
+  color: #fff;
+  text-align: center;
+}
+.btx h1{
+  font-family: cursive;
+  font-weight: bold;
+  
+}
+
+.btx button{
+  padding: 12px 45px;
+  background: transparent;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  border-style: none;
+  border: 2px solid aqua;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+ overflow: hidden;
+  
+}
+.btx button::after{
+  content: '';
+  cursor: pointer;
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  background: red;
+  top: 0;
+  left: 0;
+  z-index: -1;
+   transition: .5s all ease-in-out;
+}
+.btx button:hover::after{
+  width: 100%;
+  
+}
+
+.mg{
+  width: 100%;
+}
+.mg img{
+  position: fixed;
+  width: 100%;
+ 
+}
